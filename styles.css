@@ -1572,6 +1572,23 @@ section {
   box-shadow: var(--shadow-glow);
 }
 
+.service-full-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-full-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.service-full-card:hover .service-full-image img {
+  transform: scale(1.05);
+}
+
 .service-full-content {
   padding: 32px;
 }
